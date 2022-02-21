@@ -1,0 +1,193 @@
+/*@font-face {
+    font-family: 'Glacial Indifference';
+    src: url('./font/glacialIndifference/GlacialIndifference-Bold.otf') format('otf');
+}*/
+
+:root {
+
+	--one: white;
+	--two: #0e305d;
+	--three: #ff546c;
+	--four: #0a0b4e;
+	--five: rgba(255, 255, 255, 0.4);
+	--six: #ffd200;
+	--seven: #0d0e59;
+	--eight: #060742;
+}
+
+.text-color-one {
+	color: var(--one);
+}
+
+.bg-color-one {
+	background: var(--one);
+}
+
+.text-color-two {
+	color: var(--two);
+}
+
+.bg-color-two {
+	background: var(--two);
+}
+
+.text-color-three {
+	color: var(--three);
+}
+
+.bg-color-six {
+	background: var(--six);
+}
+
+.text-color-four {
+	color: var(--four);
+}
+
+.bg-color-four {
+	background: var(--four);
+}
+
+.bg-color-seven {
+	background: var(--seven);
+}
+
+.text-color-five {
+	color: var(--five);
+}
+
+.text-color-six {
+	color: var(--six);
+}
+
+.bg-color-two-light {
+	background: rgba(14, 48, 93, 0.8);
+}
+
+.bg-color-eight {
+	background: var(--eight);
+}
+
+body {
+	/*font-family: 'Glacial Indifference', sans-serif;*/
+	font-size: 15px;
+
+}
+
+/*Create a nice Hamburger Menu*/
+
+.navbar-toggler span {
+    display: block;
+    width: 30px;
+    height: 2px;
+    margin: 6px auto;
+    background: var(--one);
+    transition: all .6s cubic-bezier(0.250, 0.100, 0.250, 1.000);
+}
+ 
+.navbar-toggler:hover span,
+.navbar-toggler:focus span {
+    background: var(--one);
+}
+ 
+/* rotate first span */
+.navbar-toggler[aria-expanded="true"] span:first-of-type {
+    transform: rotate(45deg) translate(6px, 6px);
+}
+ 
+/* hide second span */
+.navbar-toggler[aria-expanded="true"] span:nth-of-type(2) {
+    opacity: 0;
+}
+ 
+/* rotate third span */
+.navbar-toggler[aria-expanded="true"] span:last-of-type {
+    transform: rotate(-45deg) translate(5px, -5px);
+}
+ 
+.navbar-toggler[aria-expanded="false"] span {
+    transform: none;
+    opacity: 1;
+}
+
+#home {
+	background: url(./../img/2.png) center right no-repeat;
+	background-size: cover;
+}
+
+@media (max-width: 992px) {
+
+	.navbar-dark .navbar-nav .nav-link {
+		color: var(--two);
+	}
+
+	.navbar-dark .navbar-nav .nav-link.active, .navbar-dark .navbar-nav .show>.nav-link{
+		color: var(--two);
+	}
+
+	#navbarSupportedContent {
+		background-color: var(--one);
+	}
+
+	.h1 {
+		font-size: 3rem;
+	}
+
+}
+
+@media (min-width: 992px) {
+	
+	.h1 {
+	font-size: 5rem;
+}
+
+}
+
+.border-bottom-three {
+	border-bottom: 10px solid var(--three);
+}
+
+#section-2 {
+	background: var(--four);
+}
+
+#section-2-container {
+	background: url(./../img/5.jpg) left center no-repeat;
+	background-size: cover;
+	position: relative;
+	top: -10rem;
+	left: 0; 
+	right: 0; 
+	margin-left: auto; 
+	margin-right: auto;
+}
+
+.display-7 {
+	font-size: 250px;
+	line-height: 0.8;
+}
+
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active, .nav-link:focus, .nav-link:hover, .nav-item:focus, .nav-item:hover  {
+    color: var(--one);
+    background-color: transparent;
+    border: none;
+}
+
+#testimonials {
+	/*background: var();*/
+}
+
+input:focus {
+	color: white;
+}
+
+input, textarea {
+	color:white !important;
+}
+
+footer {
+	font-size: 14px;
+}
+
+a:focus, a:hover {
+	color: var(--one);
+}
